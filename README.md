@@ -40,7 +40,7 @@ curl -X POST http://localhost:8080/admin/clients \
 
 `mode` is `TOKEN_BUCKET` or `SLIDING_WINDOW`.
 
-![Allowed request](ratelimiter-screens/01-create-client.png)
+![Create client](ratelimiter-screens/01-create-client.png)
 ### Get or update a client
 
 ```bash
@@ -50,6 +50,7 @@ curl -X PATCH http://localhost:8080/admin/clients/my-app \
   -H "Content-Type: application/json" \
   -d '{"requestsPerSecond": 20, "burstSize": 40}'
 ```
+![Updating client](ratelimiter-screens/04-update-client.png)
 
 ### Check a request
 
@@ -75,6 +76,9 @@ Example response body:
   "burstSize": 10
 }
 ```
+
+![Allowed request](ratelimiter-screens/02-allowed.png)
+![Denied request](ratelimiter-screens/03-denied.png)
 
 ## Run the tests
 
