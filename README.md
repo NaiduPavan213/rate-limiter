@@ -40,6 +40,7 @@ curl -X POST http://localhost:8080/admin/clients \
 
 `mode` is `TOKEN_BUCKET` or `SLIDING_WINDOW`.
 
+![Allowed request](ratelimiter-screens/01-create-client.png)
 ### Get or update a client
 
 ```bash
