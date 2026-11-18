@@ -78,6 +78,8 @@ Example response body:
 ```
 
 ![Allowed request](ratelimiter-screens/02-allowed.png)
+
+
 ![Denied request](ratelimiter-screens/03-denied.png)
 
 ## Run the tests
